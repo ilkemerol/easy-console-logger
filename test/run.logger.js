@@ -18,7 +18,7 @@ const boolean = true;
 const undef = undefined;
 const func = () => {};
 
-easyconsole.doit("---- simple logging --- ");
+console.log("---- simple logging --- \n");
 
 easyconsole.doit(number);
 easyconsole.doit(string);
@@ -28,10 +28,10 @@ easyconsole.doit(boolean);
 easyconsole.doit(undef);
 easyconsole.doit(func);
 
-easyconsole.doit("---- opts logging --- ");
+console.log("\n ---- opts logging --- \n");
 let opts = {
   environment: "dev",
-  date: false,
+  date: true,
   header: false,
   headerlevel: "error"
 };
@@ -43,7 +43,7 @@ easyconsole.doit(boolean, opts);
 easyconsole.doit(undef, opts);
 easyconsole.doit(func, opts);
 
-easyconsole.doit("---- level logging --- ");
+console.log(" \n ---- level logging --- \n");
 
 easyconsole.doit(number, "info");
 easyconsole.doit(string, "info");
@@ -53,7 +53,7 @@ easyconsole.doit(boolean, "info");
 easyconsole.doit(undef, "info");
 easyconsole.doit(func, "info");
 
-easyconsole.doit("---- level & opts logging --- ");
+console.log(" \n ---- level & opts logging --- \n");
 
 let opts2 = {
   environment: "dev",
