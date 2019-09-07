@@ -69,3 +69,22 @@ easyconsole.doit(array, "info", opts2);
 easyconsole.doit(boolean, "info", opts2);
 easyconsole.doit(undef, "info", opts2);
 easyconsole.doit(func, "info", opts2);
+
+let opts3 = {
+  environment: "dev",
+  date: false,
+  header: false,
+  headerlevel: "error",
+  functions: ["functiontest1"]
+};
+
+console.log(" \n ---- check with function name logging --- \n");
+function functiontest1() {
+  easyconsole.doit(number, "info", opts3);
+}
+// this won't print
+function functiontest2() {
+  easyconsole.doit(number, "info", opts3);
+}
+functiontest1();
+functiontest2();
