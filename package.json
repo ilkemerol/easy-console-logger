@@ -1,6 +1,6 @@
 {
   "name": "easy-console-logger",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A easy, light weight and multi functinal console logger",
   "main": "index.js",
   "repository": {
@@ -25,5 +25,5 @@
       "email": "akdenizgurkan@gmail.com"
     }
   ],
-  "license": "ISC"
+  "license": "MIT"
 }
